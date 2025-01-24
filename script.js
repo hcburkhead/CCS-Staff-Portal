@@ -4,7 +4,7 @@
  *    'https://script.google.com/macros/s/AKfycbxminFR3sG75NaQ5lGj5.../exec'
  */
 const backendURL =
-  'https://script.google.com/macros/s/AKfycbxminFR3sG75NaQ5lGj5j_gYNEOkf44_ILMRMukXpLJCYnppEJ4Vw6UjMIM3OA8-sFR3A/exec';
+  'https://script.google.com/macros/s/AKfycbwUdeF-LUvnXK1ovDhjGENT0MxBpRD0S6uTr80XzzkX3emM69JO-a0I0Jft6mKMXhP9Sg/exec';
 
 /**
  * Switch between sections in the UI.
