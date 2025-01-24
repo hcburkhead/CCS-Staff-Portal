@@ -1,0 +1,352 @@
+<style>
+    /* -----------------------------------------------
+       1) Import Required Google Fonts
+       ----------------------------------------------- */
+    @import url('https://fonts.googleapis.com/css2?family=Teko:wght@600&family=Oswald:wght@400&family=Lato:wght@400&display=swap');
+
+    /* -----------------------------------------------
+       2) Font Assignments
+       ----------------------------------------------- */
+
+    /* BODY COPY: Lato (Regular) */
+    body {
+      font-family: 'Lato', sans-serif;
+      font-weight: 400;
+      /* Existing background animation properties */
+      min-height: 100vh;
+      background: linear-gradient(180deg, var(--cougar-blue) 0%, #4169e1 50%, #00008B 100%);
+      background-size: 100% 200%;
+      animation: gradientAnimation 15s ease infinite;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* HEADERS: Teko (Semibold) */
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Teko', sans-serif;
+      font-weight: 600;
+      margin: 0; /* optional for heading consistency */
+    }
+
+    /* SUBHEADERS: Oswald (Regular) */
+    .subheader {
+      font-family: 'Oswald', sans-serif;
+      font-weight: 400;
+    }
+
+    /* -----------------------------------------------
+       ROOT VARIABLES & ANIMATED BACKGROUND
+       ----------------------------------------------- */
+    :root {
+      --cougar-blue: #015AA7;
+      --jet-black: #000000;
+      --pure-white: #FFFFFF;
+      --steel-gray: #949698;
+      --mascot-gray: #BBBDBF;
+      --golden-yellow: #FED308;
+    }
+
+    @keyframes gradientAnimation {
+      0% {
+        background-position-y: 0%;
+      }
+      50% {
+        background-position-y: 100%;
+      }
+      100% {
+        background-position-y: 0%;
+      }
+    }
+
+    /* -----------------------------------------------
+       NAVIGATION BAR STYLES
+       ----------------------------------------------- */
+    .navbar {
+      box-shadow: 0 2px 4px rgba(0,0,0,.1);
+    }
+
+    .navbar-dark.bg-primary {
+      background-color: var(--cougar-blue) !important;
+    }
+
+    .nav-link {
+      color: var(--pure-white) !important;
+      opacity: 0.9;
+    }
+
+    .nav-link .bi-slash-lg {
+      color: red;
+      font-size: 1.4em;
+      transform: translate(-50%, -50%) rotate(-10deg) !important;
+    }
+
+    .nav-link:hover {
+      opacity: 1;
+    }
+
+    .nav-link.active {
+      color: var(--golden-yellow) !important;
+      font-weight: bold;
+    }
+
+    /* -----------------------------------------------
+       CARD STYLES
+       ----------------------------------------------- */
+    .card {
+      background-color: rgba(255, 255, 255, 0.98);
+      border: none;
+      box-shadow: 0 3px 10px rgba(0,0,0,.2);
+      transition: transform 0.2s;
+      margin-bottom: 1rem;
+    }
+    .card:hover {
+      transform: translateY(-2px);
+    }
+
+    /* -----------------------------------------------
+       LOGO CREST STYLING
+       ----------------------------------------------- */
+    #home .col-md-4 .card {
+      background-color: transparent !important;
+      box-shadow: none;
+    }
+
+    #home .col-md-4 .card .card-body img {
+      max-width: 190px;
+      height: auto;
+      margin: 0 auto;
+    }
+
+    #home .col-md-4 .card h3 {
+      color: var(--pure-white);
+      margin-bottom: 0.5rem;
+      white-space: nowrap;
+      font-size: 1.5rem;
+    }
+
+    #home .col-md-4 .card .text-muted {
+      font-size: 1.25rem;
+      font-weight: 500;
+    }
+
+    #home .col-md-4 .card p.text-muted span {
+      display: inline-block;
+    }
+
+    #home .col-md-4 .card p.text-muted span:nth-child(1) {
+      color: var(--pure-white) !important;
+    }
+
+    #home .col-md-4 .card p.text-muted span:nth-child(2) {
+      color: var(--steel-gray) !important;
+    }
+
+    #home .col-md-4 .card p.text-muted span:nth-child(3) {
+      color: var(--golden-yellow) !important;
+    }
+
+    /* -----------------------------------------------
+       QUICK-LINK BUTTONS STYLES
+       ----------------------------------------------- */
+    .quick-links .btn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 1.25rem;
+      border: 2px solid var(--pure-white);
+      color: var(--jet-black);
+      transition: all 0.3s ease;
+    }
+
+    .quick-links .btn i {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .quick-links .btn h4 {
+      margin: 0;
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+
+    .quick-links .btn:hover {
+      background-color: var(--jet-black);
+      border-color: var(--golden-yellow);
+      color: var(--pure-white);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .btn-outline-staff {
+      background-color: var(--cougar-blue);
+      color: var(--jet-black);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    } 
+
+    .btn-outline-tech {
+      background-color: var(--mascot-gray);
+      color: var(--jet-black);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .btn-outline-overview {
+      background-color: var(--steel-gray);
+      color: var(--jet-black);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .btn-outline-student {
+      background-color: var(--golden-yellow);
+      color: var(--jet-black);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    /* -----------------------------------------------
+       PDF VIEWER & DNP CONTENT STYLES
+       ----------------------------------------------- */
+    .custom-pdf-frame {
+      width: 100%;
+      max-width: 600px;
+      height: 600px;
+      border: none;
+      overflow: hidden;
+      background: #fff;
+    }
+
+    .pdf-frame-container {
+      width: 100%;
+      max-width: 600px;
+      margin: 20px auto;
+      position: relative;
+      border: 1px solid var(--mascot-gray);
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow: hidden;
+      padding: 0;
+      box-sizing: border-box;
+      background: #fff;
+    }
+
+    #dnpContent {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    #dnpContent .alert-info {
+      width: 100%;
+      max-width: 600px;
+      margin-top: 1rem;
+      text-align: center;
+    }
+
+    .alert-info {
+      background-color: rgba(1, 90, 167, 0.1);
+      border-color: var(--cougar-blue);
+      color: var(--cougar-blue);
+    }
+
+    /* -----------------------------------------------
+       FUNDRAISING STYLES (Smaller height)
+       ----------------------------------------------- */
+    .fundraising-info {
+      height: 600px; /* reduced from 800px to show more form at once */
+      overflow-y: auto;
+      padding-right: 20px;
+    }
+
+    .fundraising-info::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    .fundraising-info::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      border-radius: 4px;
+    }
+
+    .fundraising-info::-webkit-scrollbar-thumb {
+      background: var(--mascot-gray);
+      border-radius: 4px;
+    }
+
+    .fundraising-form-container {
+      height: 600px; /* reduced from 800px */
+      padding-left: 20px;
+      border-left: 1px solid var(--mascot-gray);
+    }
+
+    .fundraising-form {
+      width: 100%;
+      height: 100%;
+      border: 1px solid var(--mascot-gray);
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    /* -----------------------------------------------
+       ANIMATION STYLING
+       ----------------------------------------------- */
+    .content-section {
+      animation: fadeIn 0.3s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* -----------------------------------------------
+       FOOTER STYLES
+       ----------------------------------------------- */
+    .footer {
+      background-color: var(--cougar-blue);
+      color: var(--pure-white);
+      padding-top: 40px;
+      padding-bottom: 20px;
+    }
+
+    .footer .logo img {
+      max-width: 200px;
+    }
+
+    .footer p {
+      max-width: 500px;
+    }
+
+    /* Use golden yellow for campus names (h4),
+       keep all paragraph text white in the footer */
+    .footer h4 {
+      color: var(--golden-yellow);
+    }
+
+    .footer p {
+      color: var(--pure-white);
+    }
+
+    .footer .campus-info article {
+      margin-bottom: 1rem;
+    }
+
+    .footer .campus-info {
+      margin-top: 1rem;
+    }
+
+    /* Footer Request Message */
+    .request-message {
+      display: inline-block;
+      text-align: left;
+    }
+    </style>
