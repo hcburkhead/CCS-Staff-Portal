@@ -4,7 +4,7 @@
  *    'https://script.google.com/macros/s/AKfycbxminFR3sG75NaQ5lGj5.../exec'
  */
 const backendURL =
-  'YOUR_DEPLOYED_WEB_APP_URL';
+  'https://script.google.com/macros/s/AKfycbxminFR3sG75NaQ5lGj5j_gYNEOkf44_ILMRMukXpLJCYnppEJ4Vw6UjMIM3OA8-sFR3A/exec';
 
 /**
  * Switch between sections in the UI.
