@@ -1,4 +1,4 @@
-const backendURL = 'https://script.google.com/macros/s/.../exec'; // Replace with your actual Apps Script URL
+const backendURL = 'https://script.google.com/macros/s/AKfycbxminFR3sG75NaQ5lGj5j_gYNEOkf44_ILMRMukXpLJCYnppEJ4Vw6UjMIM3OA8-sFR3A/exec'; // Replace with your actual Apps Script URL
 
 // Switch between sections
 function showSection(sectionId, clickedLink) {
