@@ -1,64 +1,106 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CCS Staff Portal</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
-  </head>
-  <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-      <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" href="#" onclick="showSection('home', this); return false;">
-                Home &nbsp;<i class="bi bi-house-fill"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" onclick="showSection('dnp', this); return false;">
-                DNP &nbsp;<i class="bi bi-camera-fill position-relative">
-                  <i class="bi bi-slash-lg position-absolute top-50 start-50 translate-middle"></i>
-                </i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" onclick="showSection('fundraising', this); return false;">
-                Fundraising &nbsp;<i class="bi bi-cash-coin"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" onclick="showSection('resources', this); return false;">
-                Staff Resources &nbsp;<i class="bi bi-folder-fill"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CCS Staff Portal</title>
 
-    <!-- Main Content Area -->
-    <div class="container mt-4">
-      <div id="home" class="content-section">Welcome to the Staff Portal</div>
-      <div id="dnp" class="content-section" style="display: none;">DNP Section</div>
-      <div id="fundraising" class="content-section" style="display: none;">Fundraising Section</div>
-      <div id="resources" class="content-section" style="display: none;">Resources Section</div>
+  <!-- Bootstrap CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+  />
+
+  <!-- Bootstrap Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+  />
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Main Script (defer to ensure DOM loads first) -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              href="#"
+              onclick="showSection('home', this); return false;"
+            >
+              Home &nbsp;<i class="bi bi-house-fill"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#"
+              onclick="showSection('dnp', this); return false;"
+            >
+              DNP &nbsp;
+              <i class="bi bi-camera-fill position-relative">
+                <i class="bi bi-slash-lg position-absolute top-50 start-50 translate-middle"></i>
+              </i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#"
+              onclick="showSection('fundraising', this); return false;"
+            >
+              Fundraising &nbsp;<i class="bi bi-cash-coin"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#"
+              onclick="showSection('resources', this); return false;"
+            >
+              Staff Resources &nbsp;<i class="bi bi-folder-fill"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
+  </nav>
 
-    <!-- Footer -->
-    <footer class="footer bg-primary text-white mt-5">
-      <div class="container text-center">
-        <small>&copy; 2025 Cincinnati Christian Schools. All rights reserved.</small>
-      </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+  <!-- Main Content Area -->
+  <div class="container mt-4">
+    <div id="home" class="content-section">Welcome to the Staff Portal</div>
+    <div id="dnp" class="content-section" style="display: none;"></div>
+    <div id="fundraising" class="content-section" style="display: none;">
+      Fundraising Section
+    </div>
+    <div id="resources" class="content-section" style="display: none;"></div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer bg-primary text-white mt-5">
+    <div class="container text-center">
+      <small>&copy; 2025 Cincinnati Christian Schools. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+  ></script>
+</body>
 </html>
